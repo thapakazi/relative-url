@@ -115,6 +115,11 @@ License: GPLv2 or later
 // }
 
 function callback_relative_url($buffer) {
+  // Check if xml document
+  if (strpos(trim($buffer), '<?xml') === 0) {
+      return $buffer;
+  }
+
   // Replace normal URLs
   $home_url = esc_url(home_url('/'));
   $home_url_relative = wp_make_link_relative($home_url);
