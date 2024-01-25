@@ -63,6 +63,9 @@ URLs in RSS feed are also replaced to relative URLs with this plugin, this could
 
 == Upgrade Notice ==
 
+= 0.1.9 =
+* Skip string replace if xml document. Contents like sitemap requires full url.
+
 = 0.1.8 =
 * Compatibility check for 5.8, nothing new, just bump version to tell everyone this plugin still works.
 
